@@ -33,8 +33,8 @@ module.exports = function (opt) {
 
 		if (opt.git) {
 			return require('./git')(opt.git, run);	
-		} else if (opt.files) {
-			files = opt.files;
+		} else if (opt.paths) {
+			files = opt.paths;
 			if (typeof files === 'string') {
 				files = [files];
 			}
